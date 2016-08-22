@@ -5,7 +5,7 @@ function Task(task, description) {
 }
 
 Task.prototype.previewTask = function(){
-  return this.task+ " " +this.description;
+  return this.task;
 }
 
 //frontend
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     var newTask = new Task(inputtedTask, inputtedDescription);
 
-    $("ul#tasks").append("<li><span class='task' class='input-group-addon'><input type='checkbox'>"+ newTask.previewTask()+"</span></li>");
+    $("ul#tasks").append("<li><span class='task' class='input-group-addon'><input type='checkbox'>   "+ newTask.previewTask()+"</span></li>");
 
     $(".task").last().click(function(){
     $("#show-task").show();
@@ -32,7 +32,6 @@ $(document).ready(function(){
 
     $("li").last().on("dblclick",function() {
       $(this).remove();
-      $("#show-task").empty()
     });
   });
 });

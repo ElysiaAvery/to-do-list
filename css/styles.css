@@ -1,3 +1,32 @@
+h1 {
+  font-family: 'Baloo Da', cursive;
+  font-size: 500%;
+}
+
+h2 {
+  font-family:'Baloo Da', cursive;
+}
+
+ul {
+  font-family:'Gloria Hallelujah', cursive;
+  font-size: 150%;
+}
+
+span{
+  font-family:'Gloria Hallelujah', cursive;
+  font-size: 150%;
+}
+
+p{
+  font-family:'Arvo',serif;
+  font-size: 150%;
+}
+
+.checkbox {
+  margin: 20px;
+  padding: 20px;
+}
+
 #show-task {
   display: none;
 }
@@ -10,3 +39,19 @@
 .task:hover {
   text-decoration: underline;
 }
+
+img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img#backg {
+    left: 50%;
+    margin-left: -512px;
+  }
