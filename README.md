@@ -4,15 +4,16 @@
 
 ## Description
 
-A web app that allows the user to input multiple places with info about each one.
+A web app that allows the user to input multiple to-do items with info about each one.
 
 ##Specifications
 
 Input Behavior | Input | Output
 ---------------|-------|--------
-Accepts name, city, state, park, and time. | joe, portland, or, forest park, summer | submit!
-create ul that stores information | joe, portland, or, forest park, summer | portland, or
-shows all information when you click on each list item | portland, or | joe, portland, or, forest park, summer
+accepts to-do list item | wash the dog! | submit!
+create ul that stores information | dog | dog, wash the dog
+create checkbox that allows the user to confirm when items are done | i'm done! | checked for done
+allows the user to delete items on their to-do list | i'm done | double click them away
 
 ## Setup/Installation Requirements ##
 
@@ -22,7 +23,7 @@ To use this program, you will need:
 
 ## GitHub Pages ##
 
-This survey can be viewed on GitHub Pages [here](https://elysiaavery.github.io/places/) or [here](https://crneff84.github.io/places/).
+This survey can be viewed on GitHub Pages [here](https://elysiaavery.github.io/to-do-list/) or [here](https://crneff84.github.io/to-do-list/).
 
 ## Known Bugs ##
 
