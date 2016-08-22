@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     var newTask = new Task(inputtedTask, inputtedDescription);
 
-    $("ul#tasks").append("<li><span class='task'>"+ newTask.previewTask()+"</span></li>");
+    $("ul#tasks").append("<li><span class='task' class='input-group-addon'><input type='checkbox'>"+ newTask.previewTask()+"</span></li>");
 
     $(".task").last().click(function(){
     $("#show-task").show();
@@ -30,7 +30,7 @@ $(document).ready(function(){
     $("input#new-task").val("");
     $("input#new-description").val("");
 
-    $("li").last().on("click",function() {
+    $("li").last().on("dblclick",function() {
       $(this).remove();
     });
   });
