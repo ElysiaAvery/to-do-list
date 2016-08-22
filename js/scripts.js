@@ -32,6 +32,7 @@ $(document).ready(function(){
 
     $("li").last().on("dblclick",function() {
       $(this).remove();
+      $("#show-task").empty()
     });
   });
 });
